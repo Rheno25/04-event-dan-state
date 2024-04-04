@@ -1,5 +1,5 @@
 "use client";
-import Button_1, {Button_2} from "./component/button";
+import Button_1, {Button_2, Button_3} from "./component/button";
 
 export default function Home() {
   return (
@@ -9,6 +9,11 @@ export default function Home() {
       <Button_1 />
       <hr></hr>
       <Button_2 messageContent="This is my message" buttonName="Message" />
+    </div>
+    <br></br>
+    <div className="bg-red-300" onClick={() => alert('Parent Element: Div')}>
+      <Button_3 messageContent="Child Element : Button-1" buttonName="Button-1" />
+      <Button_3 messageContent="Child Element : Button-2" buttonName="Button-2" />
     </div>
     </>
   );
