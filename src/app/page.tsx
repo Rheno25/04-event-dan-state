@@ -1,6 +1,7 @@
 "use client";
 import Accordion from "./component/accordion";
 import Button_1, {Button_2, Button_3} from "./component/button";
+import { Chat } from "./component/chat";
 import Form, { Form_2 } from "./component/form";
 import Gallery from "./component/gallery";
 
@@ -26,6 +27,8 @@ export default function Home() {
     <Form_2 />
     <br></br>
     <Accordion />
+    <br></br>
+    <Chat />
     </>
   );
 }
